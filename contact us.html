@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+    <style>
+    *{
+        margin: 0;
+        font-family: arial;
+        border: border-box;
+    }
+    
+    .navbar{
+          height: 80px;
+          background-color: rgb(78, 52, 52);
+          color: #ffff;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;    
+    }
+    
+    .pages a {
+        text-decoration: none; /* Removes underline from the link */
+        color: inherit; /* Ensures text color matches the parent element */
+        padding: 5px 10px; /* Adjust padding as needed */
+        border: 2px solid transparent; /* Always show border but transparent initially */
+        border-radius: 4px; /* Optional: rounded corners */
+        transition: border-color 0.3s ease; /* Smooth transition for border color */
+    }
+    
+    .pages a:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Slightly visible background on hover */
+    }
+    a:link {
+        color: #ffff; /* Color of unvisited links */
+    }
+    
+    a:visited {
+        color: #ffff; /* Color of visited links */
+    }
+    
+    a:hover {
+        color: #000; /* Color when hovering over the link */
+    }
+    
+    a:active {
+        color: #ffff; /* Color when the link is clicked */
+    }
+    .Home a {
+        text-decoration: none; /* Removes underline from the link */
+        color: inherit; /* Ensures text color matches the parent element */
+        padding: 5px 10px; /* Adjust padding as needed */
+        border: 2px solid transparent; /* Always show border but transparent initially */
+        border-radius: 4px; /* Optional: rounded corners */
+        transition: border-color 0.3s ease; /* Smooth transition for border color */
+    }
+    
+    .Home a:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Slightly visible background on hover */
+    }
+
+    .continer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 100px;
+        
+    }
+    .img{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 100px ;
+    }
+    
+        </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="logo border">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrAcBdC0DQ_NI06F-ZQ8c-l1V5pdmfP5KaBQ&s"  alt="logo" width="120px" height="60px">
+        </div>
+        <div class="nav-content border">
+            <p class="add-first"><a href="index.html">Home</a></p></div>
+            <p class="add-second border"> <a href="pages.html">Pages</a></p>
+            <!-- Add other links similarly -->
+            <p class="add-fourth border"><a href="sevice.html">Service</a></p>
+            <p class="add-Seventh border"><a href="used car.html">used cars</a></p>
+            <p class="add-eight border"><a href="contact us.html">Contact-us</a></p>
+            <div class="sec-logo border">
+            <img src="data:image/png;base64,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" alt="lock" height="20" width="20">
+        </div>
+        <div class="third-logo border">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkIM6adRAlPNFRBvpdl_74cvSp9Qf0bO6D7Q&s" alt="third-logo" width="20" height="20">
+        </div>
+        </div>
+     </header>
+   <div class="continer">
+    <details>
+    <summary><h2>contact us from</h2></summary>
+    <h1>03302468986</h1>
+    </details>
+
+    
+    
+</div> 
+
+</body>
+</html>
